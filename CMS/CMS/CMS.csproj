@@ -105,9 +105,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Layer\AdminSection\AdminChangeMaster.aspx" />
+    <Content Include="App_Layer\ContentSection\About.aspx" />
+    <Content Include="App_Layer\ContentSection\Css\main.css" />
+    <Content Include="App_Layer\ContentSection\Contact.aspx" />
     <Content Include="App_Layer\ContentSection\Default.aspx" />
-    <Content Include="App_Layer\ContentSection\Images\sur.jpg" />
+    <Content Include="App_Layer\ContentSection\Downloads.aspx" />
+    <Content Include="App_Layer\ContentSection\Hobbies.aspx" />
+    <Content Include="App_Layer\ContentSection\Images\At-icon.png" />
+    <Content Include="App_Layer\ContentSection\Images\background.png" />
+    <Content Include="App_Layer\ContentSection\Images\Customer-service-icon.png" />
+    <Content Include="App_Layer\ContentSection\Images\Download.png" />
+    <Content Include="App_Layer\ContentSection\Images\FC5.jpg" />
+    <Content Include="App_Layer\ContentSection\Images\gta.png" />
+    <Content Include="App_Layer\ContentSection\Images\lucky.jpg" />
+    <Content Include="App_Layer\ContentSection\Images\lucky2.jpg" />
+    <Content Include="App_Layer\ContentSection\Images\me.jpg" />
+    <Content Include="App_Layer\ContentSection\Images\me2.jpg" />
+    <Content Include="App_Layer\ContentSection\Images\phone-icon.png" />
+    <Content Include="App_Layer\ContentSection\Images\Shima.JPG" />
+    <Content Include="App_Layer\ContentSection\Images\Tapuzbersheva.png" />
+    <Content Include="App_Layer\ContentSection\Images\Tapuzbersheva2.jpeg" />
+    <Content Include="App_Layer\ContentSection\Images\Tapuzbersheva3.jpeg" />
+    <Content Include="App_Layer\ContentSection\Images\xbox.jpg" />
+    <Content Include="App_Layer\ContentSection\Lucky.aspx" />
+    <Content Include="App_Layer\ContentSection\Shima.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -156,12 +177,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Layer\AdminSection\AdminChangeMaster.aspx.cs">
-      <DependentUpon>AdminChangeMaster.aspx</DependentUpon>
+    <Compile Include="App_Layer\ContentSection\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App_Layer\AdminSection\AdminChangeMaster.aspx.designer.cs">
-      <DependentUpon>AdminChangeMaster.aspx</DependentUpon>
+    <Compile Include="App_Layer\ContentSection\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Layer\ContentSection\BaseMaster.Master.cs">
       <DependentUpon>BaseMaster.Master</DependentUpon>
@@ -170,12 +191,47 @@
     <Compile Include="App_Layer\ContentSection\BaseMaster.Master.designer.cs">
       <DependentUpon>BaseMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="App_Layer\ContentSection\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Layer\ContentSection\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="App_Layer\ContentSection\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Downloads.aspx.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Downloads.aspx.designer.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Hobbies.aspx.cs">
+      <DependentUpon>Hobbies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Hobbies.aspx.designer.cs">
+      <DependentUpon>Hobbies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Lucky.aspx.cs">
+      <DependentUpon>Lucky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Lucky.aspx.designer.cs">
+      <DependentUpon>Lucky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Shima.aspx.cs">
+      <DependentUpon>Shima.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Layer\ContentSection\Shima.aspx.designer.cs">
+      <DependentUpon>Shima.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

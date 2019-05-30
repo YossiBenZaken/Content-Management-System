@@ -31,24 +31,6 @@ namespace CMS.App_Layer.ContentSection {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// HeaderIMG control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage HeaderIMG;
-        
-        /// <summary>
-        /// lbl_HeaderText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_HeaderText;
-        
-        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>

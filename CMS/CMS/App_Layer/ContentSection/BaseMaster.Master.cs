@@ -17,11 +17,6 @@ namespace CMS.App_Layer.ContentSection
             {
                 MSSBUtil loadData = new MSSBUtil();
                 loadData.retrieveDate("select * from MasterInfo");
-                if(loadData.Table.Rows.Count>0)
-                {
-                    HeaderIMG.Src = loadData.Table.Rows[0][1].ToString();
-                    lbl_HeaderText.Text = loadData.Table.Rows[0][2].ToString();
-                }
             }
             catch(Exception ex)
             {

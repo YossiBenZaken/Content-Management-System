@@ -4,35 +4,34 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <style type="text/css">
-        #HeaderIMG {
-            height: 493px;
-        }
-    </style>
+	<title></title>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<link rel="stylesheet" type="text/css" href="Css/main.css">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
-<body style="width:100%; margin:0;padding:0;border:0;">
-    <form id="form1" runat="server">
+<body>
+	<form id="form1" runat="server">
 
-        <div style="width:100%;">
-            <div style="width:100%;height:200px;">
-                <img src="Images/sur.jpg" runat="server" id="HeaderIMG" style="height:200px;width:100%;" />
-            </div>
-            <div style="width:100%;text-align:center;">
-                <asp:Label ID="lbl_HeaderText" runat="server" Text="Hello CMS!"></asp:Label>
-            </div>
-
-            <div style="width:100%;text-align:center;">
-                <a href="../AdminSection/AdminChangeMaster.aspx">Managing</a>
-
-            </div>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-        </div>
-    </form>
+		<div style="width:100%;">
+			<ul>
+				<li><a href="Default.aspx">Home <i class="em em-house"></i></a></li>
+			<li><a href="Contact.aspx">Contact <i class="em em-iphone"></i></a></li>
+			<li><a href="About.aspx">About <i class="em em-man-raising-hand"></i></a></li>
+			<li><a href="Lucky.aspx">Lucky <i class="em em-dog2"></i></a></li>
+			<li><a href="Shima.aspx">Shima <i class="em em-cityscape"></i></a></li>
+			<li><a href="Hobbies.aspx">Hobbies <i class="em em-computer"></i></a></li>
+			<li><a href="Downloads.aspx">Downloads <i class="em em-arrow_down"></i></i></a></li>
+			</ul>
+		<div>
+					<br />
+		<br />
+		<br />
+		<br />
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		</div>
+	</form>
 </body>
 </html>
