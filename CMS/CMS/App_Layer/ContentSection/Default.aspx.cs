@@ -1,16 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace CMS.App_Layer.ContentSection
 {
     public partial class Default : System.Web.UI.Page
     {
+        SqlConnection con = new SqlConnection();
         protected void Page_Load(object sender, EventArgs e)
         {
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["MyConString"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Select PageText from MasterInfo where Page='Default'", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            DefaultText.DataSource = dr;
+            DefaultText.DataBind();
+            dr.Close();
+            con.Close();
 
         }
     }

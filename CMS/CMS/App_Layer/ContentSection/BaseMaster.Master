@@ -4,34 +4,61 @@
 
 <html>
 <head runat="server">
-	<title></title>
-	<asp:ContentPlaceHolder ID="head" runat="server">
-	</asp:ContentPlaceHolder>
-	<link rel="stylesheet" type="text/css" href="Css/main.css">
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <title>Yossi Ben Zaken</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Css/main.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 <body>
-	<form id="form1" runat="server">
+    <form id="form1" runat="server">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Yossi Ben Zaken</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-		<div style="width:100%;">
-			<ul>
-				<li><a href="Default.aspx">Home <i class="em em-house"></i></a></li>
-			<li><a href="Contact.aspx">Contact <i class="em em-iphone"></i></a></li>
-			<li><a href="About.aspx">About <i class="em em-man-raising-hand"></i></a></li>
-			<li><a href="Lucky.aspx">Lucky <i class="em em-dog2"></i></a></li>
-			<li><a href="Shima.aspx">Shima <i class="em em-cityscape"></i></a></li>
-			<li><a href="Hobbies.aspx">Hobbies <i class="em em-computer"></i></a></li>
-			<li><a href="Downloads.aspx">Downloads <i class="em em-arrow_down"></i></i></a></li>
-			</ul>
-		<div>
-					<br />
-		<br />
-		<br />
-		<br />
-			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-			</asp:ContentPlaceHolder>
-		</div>
-		</div>
-	</form>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Default.aspx">Home <i class="em em-house"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.aspx">Contact <i class="em em-iphone"></i></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="About.aspx">About <i class="em em-man-raising-hand"></i></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="Lucky.aspx">Lucky <i class="em em-dog2"></i></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="Shima.aspx">Shima <i class="em em-cityscape"></i></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="Hobbies.aspx">Hobbies <i class="em em-computer"></i></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="Downloads.aspx">Downloads <i class="em em-arrow_down"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        <div>
+                    <br />
+        <br />
+        <br />
+        <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p style="text-align:center;">&copy; <%: DateTime.Now.Year %></p>
+</footer>
+        </div>
+    </form>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
 </body>
 </html>

@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace CMS.App_Layer.ContentSection
 {
@@ -11,7 +8,15 @@ namespace CMS.App_Layer.ContentSection
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["MyConString"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Select PageText from MasterInfo where Page='About'", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            AboutText.DataSource = dr;
+            AboutText.DataBind();
+            dr.Close();
+            con.Close();
         }
     }
 }
